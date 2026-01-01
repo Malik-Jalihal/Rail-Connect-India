@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Blue circular background -->
+  <circle cx="100" cy="100" r="100" fill="#2E3F9F"/>
+  
+  <!-- Outer decorative circle -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#FDB913" stroke-width="2"/>
+  
+  <!-- Text around circle (INDIAN RAILWAYS) -->
+  <defs>
+    <path id="circlePath" d="M 30, 100 A 70, 70 0 0, 1 170, 100" fill="none"/>
+  </defs>
+  <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" letter-spacing="2">
+    <textPath href="#circlePath" startOffset="50%" text-anchor="middle">
+      INDIAN RAILWAYS
+    </textPath>
+  </text>
+  
+  <!-- Central emblem circle -->
+  <circle cx="100" cy="100" r="50" fill="#FDB913" opacity="0.1"/>
+  
+  <!-- Lion capital (simplified) -->
+  <g transform="translate(100, 85)">
+    <!-- Lion head -->
+    <circle cx="0" cy="0" r="12" fill="white"/>
+    <!-- Eyes -->
+    <circle cx="-4" cy="-2" r="2" fill="#2E3F9F"/>
+    <circle cx="4" cy="-2" r="2" fill="#2E3F9F"/>
+    <!-- Mouth -->
+    <path d="M -2 2 Q 0 4 2 2" stroke="#2E3F9F" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Wheels (representing train) -->
+  <g transform="translate(100, 115)">
+    <!-- Left wheel -->
+    <circle cx="-15" cy="0" r="8" fill="none" stroke="white" stroke-width="2"/>
+    <circle cx="-15" cy="0" r="4" fill="#2E3F9F"/>
+    <!-- Right wheel -->
+    <circle cx="15" cy="0" r="8" fill="none" stroke="white" stroke-width="2"/>
+    <circle cx="15" cy="0" r="4" fill="#2E3F9F"/>
+  </g>
+  
+  <!-- Stars decoration -->
+  <g fill="white">
+    <circle cx="40" cy="30" r="2"/>
+    <circle cx="160" cy="30" r="2"/>
+    <circle cx="35" cy="170" r="2"/>
+    <circle cx="165" cy="170" r="2"/>
+  </g>
+</svg>
